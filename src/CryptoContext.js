@@ -4,11 +4,11 @@ const Crypto = createContext();
 
 const CryptoContext = ({children}) => {
 
-    const [currency, setCurrency] = useState("TND");
-    const [symbol, setSymbol] = useState("D");
+    const [currency, setCurrency] = useState("EUR");
+    const [symbol, setSymbol] = useState("£");
 
   useEffect(() => {
-    if (currency === "TND") setSymbol("D");
+    if (currency === "EUR") setSymbol("£");
     else if (currency === "USD") setSymbol("$");
   }, [currency]);
 

@@ -3,7 +3,7 @@ import './App.css';
 import Header from './Components/Header';
 import Coinpage from './Pages/Coinpage';
 import HomePage from './Pages/HomePage';
-
+import 'react-alice-carousel/lib/alice-carousel.css';
   
   
 
