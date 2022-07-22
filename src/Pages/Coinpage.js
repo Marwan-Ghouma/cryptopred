@@ -13,7 +13,7 @@ const Coinpage = () => {
   const { id } = useParams();
   const [coin, setCoin] = useState();
   const { currency, symbol } = CryptoState();
-
+ 
 
   const fetchCoin = async () => {
     const { data } = await axios.get(SingleCoin(id));
@@ -32,7 +32,7 @@ const Coinpage = () => {
 
   return (
    
-    <div className='container'>
+    <div className='container2'>
       <div className='sidebar'>
       <img
           src={coin?.image.large}

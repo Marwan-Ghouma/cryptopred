@@ -7,7 +7,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Select from '@mui/material/Select';
 import { CryptoState } from "../CryptoContext";
-
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack' 
 
 
 
@@ -28,6 +29,13 @@ const Header = () => {
               className="header">
                  <h2>Crypto Predictor</h2>
                  </Typography>
+
+                <Stack direction="row" spacing={2} className="stack" >
+                  <Button className='butt' onClick={() => navigate(`/predictions`)}  >Predictions</Button>
+                  <Button onClick={() => navigate(`/live`)} >Btc-Eth live</Button>
+                  <Button onClick={() => navigate(`/tutos`)}>Tutos</Button>
+                 
+                </Stack>
 
                <Select  className='select'
                value={currency}
