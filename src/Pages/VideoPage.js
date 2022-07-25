@@ -1,8 +1,15 @@
 import React from 'react'
+import Card from '../Components/Card'
 
 const VidePage = () => {
   return (
-    <div>VidePage</div>
+    <div className='block'>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      
+    </div>
   )
 }
 
