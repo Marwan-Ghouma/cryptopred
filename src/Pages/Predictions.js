@@ -49,7 +49,7 @@ const Predictions = () => {
 
 
   return (
-    <div>
+    <div className='pred'>
 
 {
         !pred | flag===false ? (

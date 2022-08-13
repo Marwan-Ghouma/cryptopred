@@ -1,20 +1,23 @@
 import React from 'react'
 
 
-const Card = () => {
+
+const Card = (props) => {
   return (
     <div className='path-items'>
         
         <div className='path-items-container'>
         
-            <a href='/' className='path-items-container' >
-                <img className='path-icon' src='C:\Users\mr1gh\Documents\int\crypto-pred\public\icon.png' alt='ff' ></img>
-                <div className='path-label'>path</div>
-                <div className='path-title'>title</div>
+            <a href={props.url} className='path-items-container' >
+                <img class="path-icon" src={props.img} alt={props.title} />
+                <div className='path-label'>Path</div>
+                <div className='path-title'>{props.title}</div>
+                <div > discover here  </div>
             </a>
         </div>
     </div>
   )
 }
+
 
 export default Card
